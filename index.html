@@ -308,6 +308,37 @@ hr.solid {
 	body {
 		background: black;
 	}
+	/* Float four columns side by side */
+.column2 {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row2 {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row2:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Style the counter cards */
+.card2 {
+  box-shadow: 0 4px 8px 0 white;
+  padding: 16px;
+  text-align: center;
+  background-color: red;
+  height:340px;
+}
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column2 {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
   </style>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
@@ -374,12 +405,63 @@ hr.solid {
  </div>
  <br><br>
 <hr>
-<h1 class="heading"> What we make ? </h1><br><br>
-<img class="nature" src="sakarpara.jpg" width="100%">
-<img class="nature" src="farsipuri.jpg" width="100%">
-<img class="nature" src="ssticks.jpg" width="100%"> 
-<img class="nature" src="chakri.jpg" width="100%">  
+<h1 class="heading"> WHAT WE MAKE? </h1>
+<div class="row2">
+  <div class="column2">
+    <div class="card2">
+      <h2 class="big">SHAKARPARA</h2><hr class="solid">
+<img src="sakarpara.jpg" style="height:175px;">
+	  </div>
+  </div>
 
+  <div class="column2">
+    <div class="card2">
+       <h2 class="big">CHAKRI</h2><hr class="solid">
+	   <img src="chakri.jpg" style="height:175px;">
+ </div>
+ </div>
+ <div class="column2">
+    <div class="card2">
+       <h2 class="big">FARSIPURI</h2><hr class="solid">
+	   <img src="farsipuri.jpg" style="height:175px;width:85%;">
+ </div>
+ </div>
+ <div class="column2">
+    <div class="card2">
+       <h2 class="big">CHEVDO</h2><hr class="solid">
+	   <img src="chevdo.jpg" style="height:175px;">
+ </div>
+ </div>
+ </div>
+ <hr>
+ <div class="row2">
+  <div class="column2">
+    <div class="card2">
+      <h2 class="big">PAUVAPAPAD</h2><hr class="solid">
+<img src="pauvapapad.jpg" style="height:175px;">
+	  </div>
+  </div>
+
+  <div class="column2">
+    <div class="card2">
+       <h2 class="big">TIKHI PURI</h2><hr class="solid">
+	   <img src="tikhipuri.jpg" style="height:175px;">
+ </div>
+ </div>
+ <div class="column2">
+    <div class="card2">
+       <h2 class="big">SCHEZWAN STICKS</h2><hr class="solid">
+	   <img src="ssticks.jpg" style="height:175px;width:85%;">
+ </div>
+ </div>
+ <div class="column2">
+    <div class="card2">
+       <h2 class="big">THEPLA</h2><hr class="solid">
+	   <img src="thepla.jpg" style="height:175px;">
+ </div>
+ </div>
+ </div>
+ <br><br>
 <div id="testimonial"><br>
 <h1  class="heading"> TESTIMONIALS </h1>
 <h3 class="nil"><br>Our clients say it so much better than we ever could<br><BR></h1>
